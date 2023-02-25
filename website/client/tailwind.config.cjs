@@ -11,6 +11,9 @@ module.exports = {
         secondary: "#D0FEFE",
         tertiary: "#017374",
       },
+      backgroundImage: {
+        'parallex1': "url('./assets/luca-bravo-O453M2Liufs-unsplash.jpg')",
+      }
     },
     fontFamily: {
       'nunito': ['Nunito', 'sans-serif'],
