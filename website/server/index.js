@@ -1,4 +1,5 @@
 const express = require('express')
+const cohere = require("cohere-ai")
 const app = express()
 const cors = require('cors')
 const mongoose = require('mongoose')
@@ -11,6 +12,8 @@ const header_middleware = require("./middlewares/header")
 const postRouter = require("./routes/post");
 const userRoutes = require("./routes/user");
 const profileRoutes = require("./routes/profile");
+require("dotenv").config()
+const { writeToJson } = require("./utils")
 
 app.use(cors())
 app.use(express.json())
