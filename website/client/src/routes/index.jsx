@@ -8,8 +8,10 @@ import TajMahal from '../pages/TajMahal';
 import Colosseum from '../pages/Colosseum';
 import Eiffeltwoer from '../pages/Eiffeltwoer';
 import KukulcanPyramid from '../pages/KukulcanPyramid';
-import Greatwall from '../pages/Greatwall'
-import Translate from '../pages/Translate'
+import Greatwall from '../pages/Greatwall';
+import Blog from '../pages/Blog';
+import Write from '../pages/Write';
+import Translate from '../pages/Translate';
 
 function Index() {
     return (
@@ -25,6 +27,8 @@ function Index() {
                 <Route path="/explore/eiffeltwoer" element={<Eiffeltwoer />} />
                 <Route path="/explore/kukulcanpyramid" element={<KukulcanPyramid />} />
                 <Route path="/explore/greatwall" element={<Greatwall />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/write" element={<Write />} />
                 <Route path="/translate" element={<Translate />} />
             </Routes>
         </BrowserRouter>
