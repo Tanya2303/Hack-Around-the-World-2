@@ -5,6 +5,12 @@ const mongoose = require('mongoose')
 const User = require('./models/user.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
+const path = require("path");
+const db = require("./db/db")
+const header_middleware = require("./middlewares/header")
+const postRouter = require("./routes/post");
+const userRoutes = require("./routes/user");
+const profileRoutes = require("./routes/profile");
 
 app.use(cors())
 app.use(express.json())
